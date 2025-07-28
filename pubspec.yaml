@@ -1,5 +1,5 @@
 name: modular_flutter
-description: "A new Flutter project."
+description: "A production-grade Flutter app demonstrating clean architecture, multi-modular design, BLoC state management, and Melos monorepo configuration — based on the Flutter Advanced Course: Multi-Modular & Clean Architecture."
 version: 1.0.0+1
 
 environment:
