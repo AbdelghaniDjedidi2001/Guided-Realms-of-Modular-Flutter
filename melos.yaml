@@ -15,3 +15,18 @@ command:
 
     dev_dependencies:
       flutter_lints: ^6.0.0
+
+
+
+
+scripts:
+  bootstrap:
+    run: melos bootstrap
+  test:
+    run: melos run test
+  format:
+    run: melos run format
+  analyze:
+    run: melos run analyze
+  clean:
+    run: melos clean
