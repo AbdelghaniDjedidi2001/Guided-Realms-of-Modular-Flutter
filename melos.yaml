@@ -1,0 +1,5 @@
+name: modular_flutter
+packages:
+  - apps/*
+  - packages/core/**
+  - packages/features/**
