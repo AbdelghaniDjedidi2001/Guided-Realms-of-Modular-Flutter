@@ -23,7 +23,7 @@ scripts:
   bootstrap:
     run: melos bootstrap
   test:
-    run: melos run test
+    run: melos exec --concurrency=1 -- flutter test
   format:
     run: melos run format
   analyze:
