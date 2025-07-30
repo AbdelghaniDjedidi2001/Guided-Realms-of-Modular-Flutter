@@ -7,4 +7,4 @@ final getIt = GetIt.instance;
 
 
 @injectableInit
-void configureDeoendencies() => getIt.init();
+void configureDeoendencies(String? environment) => getIt.init(environment: environment);
