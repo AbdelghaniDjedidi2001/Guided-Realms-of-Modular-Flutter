@@ -1,6 +1,7 @@
 name: modular_flutter
 description: "A production-grade Flutter app demonstrating clean architecture, multi-modular design, BLoC state management, and Melos monorepo configuration — based on the Flutter Advanced Course: Multi-Modular & Clean Architecture."
 version: 1.0.0+1
+publish_to: none # Remove this line if you wish to publish to pub.dev
 
 environment:
   sdk: ^3.8.1
@@ -10,6 +11,8 @@ dependencies:
   melos: ^6.3.3 
   get_it: ^8.0.3
   injectable: ^2.5.1
+  app_settings:
+    path: packages/features/settings/app_settings
 
 dev_dependencies:
   flutter_test:
