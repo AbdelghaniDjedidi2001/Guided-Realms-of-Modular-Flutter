@@ -23,6 +23,6 @@ class DevAppSettingProviderImpl extends AppSettingProvider {
 
   @override
   String getThemeType() {
-    throw UnimplementedError();
+    return 'light';
   }
 }

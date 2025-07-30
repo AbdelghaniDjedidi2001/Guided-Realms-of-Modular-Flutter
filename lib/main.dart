@@ -1,4 +1,5 @@
 import 'package:app_settings/provider/app_setting_provider.dart';
+import 'package:data_store/provider/session_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 import 'package:modular_flutter/di/injection.dart';
@@ -24,8 +25,30 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appSettingProvider = getIt<AppSettingProvider>();
+    final sessionProvider = getIt<SessionProvider>();
     return Scaffold(
-      body: Center(child: Text(appSettingProvider.getAppLanguge())),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(appSettingProvider.getAppLanguge()),
+            Text(appSettingProvider.getThemeType()),
+            Text(sessionProvider.getUserName()),
+            Text(sessionProvider.getUserEmail()),
+
+            Text(sessionProvider.getUserId()),
+            Text(sessionProvider.getSessionId()),
+            Text(sessionProvider.isLoggedIn().toString()),
+            ElevatedButton(
+              onPressed: () {
+                sessionProvider.logout();
+              },
+              child: const Text('Logout'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
