@@ -1,4 +1,5 @@
 import 'package:app_settings/di/injection.dart';
+import 'package:data_store/di/injection.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 
@@ -10,4 +11,5 @@ final getIt = GetIt.instance;
 void configureDeoendencies(String? environment) {
   getIt.init(environment: environment);
   configureAppSettingsDependency(getIt, environment);
+  configureDataStoreDependency(getIt, environment);
 }

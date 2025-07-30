@@ -13,6 +13,8 @@ dependencies:
   injectable: ^2.5.1
   app_settings:
     path: packages/features/settings/app_settings
+  data_store:
+    path: packages/core/data_store
 
 dev_dependencies:
   flutter_test:
