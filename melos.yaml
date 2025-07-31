@@ -16,6 +16,7 @@ command:
       get_it: ^8.0.3
       injectable: ^2.5.1
       json_annotation: ^4.9.0
+      retrofit: ^4.7.0
 
 
     dev_dependencies:
@@ -23,6 +24,7 @@ command:
       injectable_generator: ^2.0.0
       build_runner: ^2.0.0
       json_serializable: ^6.10.0
+      retrofit_generator: ^10.0.1
 
 
 
