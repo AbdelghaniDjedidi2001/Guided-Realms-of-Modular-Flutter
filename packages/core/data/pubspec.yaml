@@ -8,6 +8,8 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  dio: ^5.0.0
+  pretty_dio_logger: ^1.4.0
   flutter:
     sdk: flutter
 
