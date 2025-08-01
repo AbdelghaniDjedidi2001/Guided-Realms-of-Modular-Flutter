@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:login/responses/login_response.dart';
+import 'package:login/data/responses/login_response.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'login_service.g.dart';
