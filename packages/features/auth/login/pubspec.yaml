@@ -12,6 +12,7 @@ dependencies:
   dio: ^5.0.0
   retrofit: ^4.7.0
   json_annotation: ^4.9.0
+  dartz: ^0.10.1
   flutter:
     sdk: flutter
   domain:
