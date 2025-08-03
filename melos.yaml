@@ -17,6 +17,7 @@ command:
       injectable: ^2.5.1
       json_annotation: ^4.9.0
       retrofit: ^4.7.0
+      dartz: ^0.10.1
 
 
     dev_dependencies:
